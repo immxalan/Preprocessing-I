@@ -293,6 +293,11 @@ body {
   justify-content: space-between;
   padding: 2% 2% 2% 2%;
 }
+@media (max-width: 500px) {
+  #workhistory-section {
+    margin-top: 20%;
+  }
+}
 #workhistory-section #workhistory-container {
   display: flex;
   flex-flow: column wrap;
