@@ -52,8 +52,188 @@ table {
 * {
     box-sizing: border-box;
 }
-
-html, body {
-    height: 100%;
+@font-color: #A8A7A7;
+@font-family: Bold, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+.text-class{
+	color:gray;
+	font-size: 12pt;
 }
+.header-text{
+	text-transform: uppercase;
+	font-size: 20pt;
+	color: black;
+	padding: 2% 0 2% 0
+}
+html, body {
+	height: 100%;
+	margin: 0% 2%;
+}
+// Nav Section
+#nav-section{
+	margin-top: 3%;
+	.nav-container{
+	display: flex;
+	width: 100%;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	color: @font-color;
+	font-family: @font-family;
+	// Mobile Screen Styling Nav Section
+	@media (max-width: 500px){
+		display: flex;
+		width: 100%;
+		flex-flow: column wrap;
+		text-align:center;
+		color: @font-color;
+		font-family: @font-family;
+		.nav-element{
+			padding: 2% 0 2% 0
+		}
+	}
+	}
+}
+// Contact-Image Section
+#contact-image-section{
+	margin: 5% 0;
+	padding:2%;
+	background:rgb(228, 231, 235);
+	#contact-section-container{
+		width:100%;
+		display:flex;
+		flex-flow:column wrap;
 
+		#image-container{
+			width:100%;
+			display:flex;
+			flex-flow: row nowrap;
+			justify-content: space-between;
+			margin-bottom: 4%;
+	// Mobile Screen Styling Image Container
+			@media (max-width: 500px){
+				width:100%;
+				display: flex;
+				flex-flow: column wrap;
+				align-items: center;
+				.image{
+					padding: 2% 0 2% 0
+				}
+		}
+			}
+		.contact-text{
+			.header-text;
+			text-align: center;
+		// Mobile Screen Styling Contact Text
+			@media (max-width: 500px){
+				font-size:15pt;
+			}	
+			}	
+		#button-container{
+			display:flex;
+			justify-content: center;
+			width: 100%;
+			margin-top: 2%;
+		}
+		}
+}
+// Introduction/Skills Section
+#introduction-skills-section{
+	.text-class;
+	#intro-skills-container{
+		width:100%;
+		display:flex;
+		flex-flow: row nowrap;
+		justify-content: space-between;
+		// Mobile Screen Styling Introduction/Skills Container
+		@media (max-width: 500px){
+			width:100%;
+			display: flex;
+			flex-flow: column wrap;
+			margin-bottom: 3%;
+		}
+		#intro-container{
+			width:45%;
+			display:flex;
+			flex-flow: column wrap;
+			// Mobile Screen Styling Introduction Container
+			@media (max-width: 500px){
+				width: 100%;
+			}
+			.about-me{
+				.header-text;
+			// Mobile Screen Styling Introduction Text
+				@media (max-width: 500px){
+					font-size: 15pt;
+					text-align: center;
+					margin-bottom: 3%
+				}
+			}
+		}
+	#skills-container{
+		.skills{
+			.header-text;
+			// Mobile Screen Styling Skills Text
+			@media (max-width: 500px){
+				font-size: 15pt;
+				text-align: center;
+				margin-top: 3%;
+			}
+		}
+		#list-container{
+			border: 1px solid gray;
+			// Mobile Screen Styling Skills-list Container
+			@media (max-width: 500px){
+				border: 0px;
+				display:flex;
+				width: 100%;
+				flex-flow: column wrap;
+				margin-bottom: 15%;
+			}
+			.list-item{
+				border-bottom: 0.5px solid gray;
+				border-top: 0.5px solid gray;
+				padding: 5%;
+			}
+		}
+		}
+	}
+}
+// Work History Section
+.workhistory-flexbox{
+	display: flex;
+	flex-flow: row nowrap;
+	width: 100%;
+	justify-content: space-between;
+	padding: 2% 2% 2% 2%;
+}
+#workhistory-section{
+	@media (max-width: 500px){
+		margin-top: 20%;
+	}
+	#workhistory-container{
+		display: flex;
+		flex-flow: column wrap;
+		width: 100%;
+		.workhistory{
+			.header-text;
+			// Mobile Screen Styling Work History Text
+			@media (max-width: 500px){
+				font-size: 15pt;
+				text-align: center;
+					}
+		}
+		#workhistory-first-line{
+			.workhistory-flexbox;
+		}
+		#workhistory-second-line{
+			.workhistory-flexbox;
+			background: rgb(228, 231, 235)
+		}
+		#workhistory-third-line{
+			.workhistory-flexbox;
+		}
+		#workhistory-fourth-line{
+			.workhistory-flexbox;
+			background: rgb(228, 231, 235)
+		}
+	}
+}
