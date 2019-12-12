@@ -130,8 +130,213 @@ table {
 * {
   box-sizing: border-box;
 }
+.text-class {
+  color: gray;
+  font-size: 12pt;
+}
+.header-text {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: black;
+  padding: 2% 0 2% 0;
+}
 html,
 body {
   height: 100%;
-  background: red;
+  margin: 0% 2%;
+}
+#nav-section {
+  margin-top: 3%;
+}
+#nav-section .nav-container {
+  display: flex;
+  width: 100%;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  color: #A8A7A7;
+  font-family: Bold, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+@media (max-width: 500px) {
+  #nav-section .nav-container {
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    text-align: center;
+    color: #A8A7A7;
+    font-family: Bold, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  #nav-section .nav-container .nav-element {
+    padding: 2% 0 2% 0;
+  }
+}
+#contact-image-section {
+  margin: 5% 0;
+  padding: 2%;
+  background: #e4e7eb;
+}
+#contact-image-section #contact-section-container {
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+}
+#contact-image-section #contact-section-container #image-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+@media (max-width: 500px) {
+  #contact-image-section #contact-section-container #image-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  #contact-image-section #contact-section-container #image-container .image {
+    padding: 2% 0 2% 0;
+  }
+}
+#contact-image-section #contact-section-container .contact-text {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: black;
+  padding: 2% 0 2% 0;
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #contact-image-section #contact-section-container .contact-text {
+    font-size: 15pt;
+  }
+}
+#contact-image-section #contact-section-container #button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2%;
+}
+#introduction-skills-section {
+  color: gray;
+  font-size: 12pt;
+}
+#introduction-skills-section #intro-skills-container {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+@media (max-width: 500px) {
+  #introduction-skills-section #intro-skills-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 3%;
+  }
+}
+#introduction-skills-section #intro-skills-container #intro-container {
+  width: 45%;
+  display: flex;
+  flex-flow: column wrap;
+}
+@media (max-width: 500px) {
+  #introduction-skills-section #intro-skills-container #intro-container {
+    width: 100%;
+  }
+}
+#introduction-skills-section #intro-skills-container #intro-container .about-me {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: black;
+  padding: 2% 0 2% 0;
+}
+@media (max-width: 500px) {
+  #introduction-skills-section #intro-skills-container #intro-container .about-me {
+    font-size: 15pt;
+    text-align: center;
+    margin-bottom: 3%;
+  }
+}
+#introduction-skills-section #intro-skills-container #skills-container .skills {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: black;
+  padding: 2% 0 2% 0;
+}
+@media (max-width: 500px) {
+  #introduction-skills-section #intro-skills-container #skills-container .skills {
+    font-size: 15pt;
+    text-align: center;
+    margin-top: 3%;
+  }
+}
+#introduction-skills-section #intro-skills-container #skills-container #list-container {
+  border: 1px solid gray;
+}
+@media (max-width: 500px) {
+  #introduction-skills-section #intro-skills-container #skills-container #list-container {
+    border: 0px;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+    margin-bottom: 15%;
+  }
+}
+#introduction-skills-section #intro-skills-container #skills-container #list-container .list-item {
+  border-bottom: 0.5px solid gray;
+  border-top: 0.5px solid gray;
+  padding: 5%;
+}
+.workhistory-flexbox {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+}
+#workhistory-section #workhistory-container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+}
+#workhistory-section #workhistory-container .workhistory {
+  text-transform: uppercase;
+  font-size: 20pt;
+  color: black;
+  padding: 2% 0 2% 0;
+}
+@media (max-width: 500px) {
+  #workhistory-section #workhistory-container .workhistory {
+    font-size: 15pt;
+    text-align: center;
+  }
+}
+#workhistory-section #workhistory-container #workhistory-first-line {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+}
+#workhistory-section #workhistory-container #workhistory-second-line {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+  background: #e4e7eb;
+}
+#workhistory-section #workhistory-container #workhistory-third-line {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+}
+#workhistory-section #workhistory-container #workhistory-fourth-line {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  justify-content: space-between;
+  padding: 2% 2% 2% 2%;
+  background: #e4e7eb;
 }
